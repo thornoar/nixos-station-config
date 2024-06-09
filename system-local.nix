@@ -69,6 +69,11 @@
                     ignorePerms = false;
                     devices = [ "laptop" ];
                 };
+                "sandbox" = {
+                    path = "~/projects/sandbox";
+                    ignorePerms = false;
+                    devices = [ "laptop" ];
+                };
             };
         };
 
