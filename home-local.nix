@@ -12,7 +12,7 @@
         windowSpace = 14;
         windowBorderWidth = 0;
 
-        terminalOpacity = 0.9;
+        terminalOpacity = 0.97;
         terminalPadding = { x = 4; y = 3; };
 
         barHeight = 35;
