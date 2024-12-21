@@ -29,50 +29,47 @@
             };
         };
 
+        boot.kernelPackages = pkgs.linuxPackages_latest;
+
         fileSystems."/home/ramak/media" = {
             device = "/dev/disk/by-uuid/baf7b861-a1fa-4261-b38f-b7200bee9faf";
             fsType = "ext4";
             options = [ "nofail" "rw" "user" "auto" ];
         };
-        # fileSystems."/home/ramak/basic" = {
-        #     device = "/dev/disk/by-uuid/334FB4EF0C55A12E";
-        #     fsType = "ntfs";
-        #     options = [ "nofail" "rw" "user" ];
-        # };
 
         networking.wireless.iwd.enable = true;
         networking.networkmanager.wifi.backend = "iwd";
 
         services.syncthing.settings = {
             devices = {
-                "laptop" = { id = "TCSGHBY-J7S2EQC-4TZW6ZW-Q7PXKL4-J74ZR37-NJKZDGG-EHEL47Y-OHWZ5A5"; };
-                "phone" = { id = "RLHSCWU-KTCTYQL-FXTBMN5-CEEH3FB-3TP3B2Y-2T5FE64-SENTOZR-SE5B5QQ"; };
+                # "laptop" = { id = "TCSGHBY-J7S2EQC-4TZW6ZW-Q7PXKL4-J74ZR37-NJKZDGG-EHEL47Y-OHWZ5A5"; };
+                # "phone" = { id = "RLHSCWU-KTCTYQL-FXTBMN5-CEEH3FB-3TP3B2Y-2T5FE64-SENTOZR-SE5B5QQ"; };
             };
             folders = {
                 "music" = {
                     path = "~/media/music";
                     ignorePerms = false;
-                    devices = [ "laptop" ];
+                    devices = [];
                 };
                 "books" = {
                     path = "~/media/books";
                     ignorePerms = false;
-                    devices = [ "laptop" ];
+                    devices = [];
                 };
                 "wallpapers" = {
                     path = "~/media/wallpapers";
                     ignorePerms = false;
-                    devices = [ "laptop" ];
+                    devices = [];
                 };
                 "notes" = {
                     path = "~/projects/notes";
                     ignorePerms = false;
-                    devices = [ "laptop" ];
+                    devices = [];
                 };
                 "sandbox" = {
                     path = "~/projects/sandbox";
                     ignorePerms = false;
-                    devices = [ "laptop" ];
+                    devices = [];
                 };
             };
         };
