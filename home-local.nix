@@ -5,7 +5,7 @@
         home.pointerCursor.size = 16;
 
         xmonad = lib.mkForce {
-            desktopScale = 1.0;
+            desktopScale = 1.6;
             fontsize = 11;
             fontsizeXmobar = 13;
             fontsizeRunPrompt = 11;
@@ -23,8 +23,8 @@
         };
 
         hyprland = lib.mkForce {
-            desktopScale = 1.0;
-            resolution = "2880x1620";
+            desktopScale = 1.6;
+            resolution = "2560x1440";
             fontsize = 11;
             fontsizeWaybar = 11;
             windowSpaceInner = 4;
@@ -38,7 +38,7 @@
         };
 
         wallpaper = lib.mkForce {
-            dir = "Wallpapers";
+            dir = "Landscapes";
             gamma = 0.9;
             contrast = 1.0;
         };
@@ -46,7 +46,7 @@
         misc = lib.mkForce {
             usePackageList = true;   
             systemFont = "Hack";
-            monitorName = "DP-1";
+            monitorName = "HDMI-A-1";
             wmStartupCommand = "echo hi";
         };
 
